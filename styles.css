@@ -1,0 +1,35 @@
+body {
+    max-width: 500px;
+    margin: 1em auto;
+    font-family: sans-serif;
+}
+.select-image {
+    list-style: none;
+    margin: 2em 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.select-image li {
+    width: 33.33%;
+}
+.select-image img {
+    display: block;
+    width: 100%;
+    border: solid 4px;
+    mix-blend-mode: multiply;
+    box-sizing: border-box;
+}
+.select-image li:hover {
+    background: yellow;
+}
+.select-text {
+    margin: 2em 0 1em;
+    border: solid 4px;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+.select-position {
+    display: inline-block;
+}
