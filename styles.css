@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'impact';
+    src: local('impact'), url('impact.ttf') format('truetype');
+}
 body {
     width: 500px;
     max-width: 90vw;
