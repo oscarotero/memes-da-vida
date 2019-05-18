@@ -3,14 +3,20 @@
     src: local('impact'), url('impact.ttf') format('truetype');
 }
 body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.generate, .tools {
     width: 500px;
     max-width: 90vw;
     margin: 1em auto;
-    font-family: sans-serif;
 }
 .preview {
     max-width: 100%;
+    max-height: 80vh;
+    margin: auto;
     display: block;
+    background: #ddd;
 }
 .select-image {
     list-style: none;
@@ -33,7 +39,7 @@ body {
     background: yellow;
 }
 .select-text {
-    margin: 2em 0 1em;
+    margin: 1em 0;
     border: solid 4px;
     padding: 1em;
     width: 100%;
@@ -41,4 +47,33 @@ body {
 }
 .select-position {
     display: inline-block;
+    padding: .5em 0;
+}
+.download {
+    display: inline-block;
+    padding: .5em;
+    border: solid 4px;
+    margin-top: 1em;
+    color: black;
+    font-weight: bold;
+}
+.download:hover {
+    background-color: yellow;
+}
+.download[hidden] {
+    visibility: hidden;
+}
+
+@media (min-width: 1000px) {
+    body {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: start;
+        grid-gap: 2em;
+    }
+    .generate {
+        position: sticky;
+        top: 1em;
+    }
 }

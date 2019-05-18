@@ -1,5 +1,5 @@
 const canvas = document.querySelector('canvas');
-const share = document.querySelector('.share');
+const download = document.querySelector('.download');
 const context = canvas.getContext('2d');
 
 //Styles
@@ -48,9 +48,9 @@ function draw() {
     });
 
     if (currentImage && currentText) {
-        share.hidden = false;
-        share.href = canvas.toDataURL();
+        download.hidden = false;
+        download.href = canvas.toDataURL();
     } else {
-        share.hidden = true;
+        download.hidden = true;
     }
 }
